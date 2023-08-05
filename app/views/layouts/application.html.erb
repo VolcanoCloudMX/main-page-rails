@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>VolcanoRails</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Volcano Cloud Community</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+    <%= render partial: 'shared/head' %>
   </head>
 
   <body>
     <%= yield %>
+    <%= render partial: 'shared/footer' %>
+    <%= render partial: 'shared/scripts' %>
   </body>
 </html>
