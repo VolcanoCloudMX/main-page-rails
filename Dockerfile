@@ -15,7 +15,8 @@ RUN bundle config --global frozen 1
 RUN bundle install --without development test
 
 COPY . /usr/src/app
-RUN bundle exec rake DATABASE_URL=postgresql:does_not_exist assets:precompile
+RUN /bin/bash -c "source /usr/src/app/credentials.sh"
+RUN bundle exec rake assets:precompile
 
-EXPOSE 3000
-CMD ["rails", "server", "-b", "0.0.0.0"]
+EXPOSE 80
+CMD ["rails", "server", "-b", "0.0.0.0", "-p", "80"]
