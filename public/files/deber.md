@@ -1,0 +1,3 @@
+Nosotros, como líderes de Volcano Cloud, estamos a cargo de hacer saber a los demás miembros de la comunidad este código de conducta, así como de asegurarnos de que se cumpla con lo establecido y tomar acción en los casos inapropiados, ofensivos o dañinos según lo ya mencionado, para así evaluar si se proporcionará una advertencia, suspensión temporal o suspensión permanente a los involucrados en la violación de este código de conducta. Asimismo, tenemos la responsabilidad de comunicar de manera clara a todos los miembros cuando se realicen modificaciones en el código de conducta.
+
+Revisa nuestro [Código de Conducta](https://volcanocloud.org/conducta) para más información.

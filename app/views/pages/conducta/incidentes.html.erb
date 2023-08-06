@@ -1,0 +1,7 @@
+<%= render partial: 'shared/title', locals: { title: "Reporte de incidentes" } %>
+
+<div class="m-5 text-justify">
+    <%= render_markdown('files/incidentes.md') %>
+</div>
+
+<%= render partial: 'shared/faq' %>

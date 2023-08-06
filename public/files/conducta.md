@@ -1,10 +1,8 @@
-# Volcano Cloud: Empoderando a través de la Tecnología
+## Volcano Cloud: Empoderando a través de la Tecnología
 
 Volcano Cloud es una comunidad dedicada a empoderar a las personas a través del aprendizaje y la colaboración en torno a la tecnología. Nuestro objetivo es brindar a nuestros miembros las herramientas, habilidades y conocimientos necesarios para que puedan aprovechar al máximo las oportunidades tecnológicas y convertirse en líderes en sus respectivos campos.
 
 Los miembros de Volcano Cloud son apasionados por la tecnología y están comprometidos con compartir sus conocimientos y experiencias para ayudar a otros a crecer y desarrollarse en el ámbito tecnológico. La comunidad ofrece una amplia gama de eventos y recursos, incluyendo charlas, talleres, hackatones, foros de discusión y más, para que sus miembros puedan aprender y colaborar en un ambiente de apoyo y respeto.
-
-## Código de Conducta de Volcano Cloud
 
 ### Nuestro compromiso
 
