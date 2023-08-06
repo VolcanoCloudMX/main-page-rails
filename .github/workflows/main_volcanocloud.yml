@@ -13,6 +13,9 @@ jobs:
   build:
     runs-on: 'ubuntu-latest'
 
+    env:
+      SECRET_KEY_BASE: ${{ secrets.SECRET_KEY_BASE }}
+
     steps:
     - uses: actions/checkout@v2
 
@@ -31,7 +34,7 @@ jobs:
       with:
         push: true
         tags: volcanocloud.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_d14061f53604487b934d0c7abc8d4d11 }}/volcanocloud:${{ github.sha }}
-        file: ./Dockerfile
+        file: ./Dockerfile.prod
 
   deploy:
     runs-on: ubuntu-latest
