@@ -5,8 +5,10 @@ Rails.application.routes.draw do
 
   root 'pages#index'
 
-  get 'conducta', to: 'code_of_conduct#show'
-  get 'reglamento', to: 'code_of_conduct#show'
+  get 'conducta', to: 'pages#conducta'
+  get 'reglamento', to: 'pages#conducta'
 
   get 'faq', to: 'pages#faq'
+
+  match '*path', to: 'errors#not_found', via: :all
 end

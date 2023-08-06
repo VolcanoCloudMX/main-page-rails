@@ -9,8 +9,6 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= javascript_importmap_tags %>
     <%= render partial: 'shared/head' %>
   </head>
 
@@ -27,5 +25,6 @@
     <div id="scripts-section">
       <%= render partial: 'shared/scripts' %>
     </div>
+    <div id="preloader"></div>
   </body>
 </html>
