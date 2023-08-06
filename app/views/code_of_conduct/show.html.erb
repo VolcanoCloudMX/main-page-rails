@@ -1,3 +1,5 @@
-<div class="m-5">
+<%= render partial: 'shared/title', locals: { title: "Código de Conducta" } %>
+
+<div class="m-5 text-justify">
     <%= render_markdown('conducta.md') %>
 </div>

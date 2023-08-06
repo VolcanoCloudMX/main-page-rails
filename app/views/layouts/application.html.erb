@@ -15,8 +15,17 @@
   </head>
 
   <body>
-    <%= yield %>
-    <%= render partial: 'shared/footer' %>
-    <%= render partial: 'shared/scripts' %>
+    <div id="header-section">
+      <%= render partial: 'shared/header' %>
+    </div>
+    <main id="main">
+      <%= yield %>
+    </main>
+    <div id="footer-section">
+      <%= render partial: 'shared/footer' %>
+    </div>
+    <div id="scripts-section">
+      <%= render partial: 'shared/scripts' %>
+    </div>
   </body>
 </html>
