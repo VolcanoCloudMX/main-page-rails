@@ -26,7 +26,7 @@
             </ul>
           </li>
           <li><a href="/contacto">Contacto</a></li>
-          <li><a class="get-a-quote" href="/login">Inscribirse</a></li>
+          <li><%= button_to "Inscribirse", "/auth/auth0", method: :post, class: "get-a-quote", data: { disable_with: "Inscribiendo...", turbo: false } %></li>
         </ul>
       </nav><!-- .navbar -->
 
