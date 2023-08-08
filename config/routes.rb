@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'auth0/callback'
+  get 'auth0/failure'
   get 'pages/index'
   get 'code_of_conduct/show'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
