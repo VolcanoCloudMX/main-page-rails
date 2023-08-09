@@ -1,5 +1,7 @@
 class PagesController < ApplicationController
   def index
+    @user = session[:userinfo]
+    # byebug
   end
 
   def faq

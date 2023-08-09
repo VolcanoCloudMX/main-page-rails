@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row gy-4 d-flex justify-content-between">
         <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-          <h2 data-aos="fade-up">Empoderando a la comunidad</h2>
+          <h2 data-aos="fade-up"><%= @user ? "Hola #{@user["given_name"]}" : "Empoderando a la comunidad" %></h2>
           <p data-aos="fade-up" data-aos-delay="100">Volcano Cloud es una comunidad dedicada a empoderar a las personas a través del aprendizaje y la colaboración en torno a la tecnología. </p>
 
           <form action="#" class="form-search d-flex align-items-stretch mb-3" data-aos="fade-up" data-aos-delay="200">

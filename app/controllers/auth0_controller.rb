@@ -7,4 +7,16 @@ class Auth0Controller < ApplicationController
 
   def failure
   end
+
+  def logout
+    session.delete(:userinfo)
+    reset_session
+    url = URI::HTTPS.build(
+      host: Rails.application.credentials.auth0[:domain], path: '/v2/logout',
+      query: {
+        returnTo: root_url,
+        client_id: Rails.application.credentials.auth0[:client_id]
+      }.to_query).to_s
+    redirect_to url, allow_other_host: true, status: :see_other
+  end
 end

@@ -1,12 +1,14 @@
 Rails.application.routes.draw do
-  get 'auth0/callback'
-  get 'auth0/failure'
+  # Auth0
+  get 'auth/auth0/callback', to: 'auth0#callback'
+  get 'auth/auth0/failure', to: 'auth0#failure'
+  get 'auth/auth0/logout', to: 'auth0#logout'
+  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
   get 'pages/index'
   get 'code_of_conduct/show'
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
+  # Root
   root 'pages#index'
-
+  # Pages
   get 'conducta', to: 'pages#conducta'
   get 'reglamento', to: 'pages#conducta'
   get 'compromiso', to: 'pages#compromiso'
@@ -18,5 +20,6 @@ Rails.application.routes.draw do
 
   get 'faq', to: 'pages#faq'
 
-  match '*path', to: 'errors#not_found', via: :all
+
+  # match '*path', to: 'errors#not_found', via: :all
 end
