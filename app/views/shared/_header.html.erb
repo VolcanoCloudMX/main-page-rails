@@ -26,7 +26,8 @@
             </ul>
           </li>
           <li><a href="/contacto">Contacto</a></li>
-          <li><%= button_to "Inscribirse", "/auth/auth0", method: :post, class: "get-a-quote", data: { disable_with: "Inscribiendo...", turbo: false } %></li>
+          <li><%= (button_to "Inscribirse", "/auth/auth0", method: :post, class: "get-a-quote", data: { disable_with: "Inscribiendo...", turbo: false }) unless @user %></li>
+          <li><%= (link_to "Salir", "/auth/auth0/logout", class: "get-a-quote", data: { disable_with: "Saliendo...", turbo: false }) if @user %></li>
         </ul>
       </nav><!-- .navbar -->
 
