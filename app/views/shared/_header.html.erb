@@ -11,10 +11,9 @@
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="/" class="active">Inicio</a></li>
+          <li><a href="/" class="">Inicio</a></li>
           <li><a href="/blog">Blog</a></li>
           <li><a href="/events">Eventos</a></li>
-          <li><a href="/proyects">Proyectos</a></li>
           <li class="dropdown"><a href="#"><span>Conducta</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
               <li><a href="/conducta">Código de Conducta</a></li>
@@ -26,6 +25,7 @@
             </ul>
           </li>
           <li><a href="/contacto">Contacto</a></li>
+          <li><a href="https://volcanocloud.org/discord" class="">Discord<i class="bi bi-discord ms-3"></i></a></li>
           <li><%= (button_to "Inscribirse", "/auth/auth0", method: :post, class: "get-a-quote", data: { disable_with: "Inscribiendo...", turbo: false }) unless @user %></li>
           <li><%= (link_to "Salir", "/auth/auth0/logout", class: "get-a-quote", data: { disable_with: "Saliendo...", turbo: false }) if @user %></li>
         </ul>

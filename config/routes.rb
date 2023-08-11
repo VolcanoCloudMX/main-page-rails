@@ -20,6 +20,7 @@ Rails.application.routes.draw do
 
   get 'faq', to: 'pages#faq'
 
+  get 'discord', to: 'pages#discord'
 
-  # match '*path', to: 'errors#not_found', via: :all
+  match '*unmatched_route', to: 'errors#not_found', via: :all
 end

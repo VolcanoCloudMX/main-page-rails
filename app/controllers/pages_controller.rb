@@ -33,4 +33,8 @@ class PagesController < ApplicationController
   def incidentes
     render "pages/conducta/incidentes"
   end
+
+  def discord
+    redirect_to 'https://discord.gg/FF9N98wsCX', allow_other_host: true
+  end
 end
